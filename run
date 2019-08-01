@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+docker run \
+  --detatch \
+  --device /dev/snd \
+  --env AIRPLAY_NAME=${HOSTNAME} \
+  --name shairport-sync \
+  --net host \
+  --restart always \
+  solosuper/shairport-sync:latest -- -d hw:0 -c PCM 
+
