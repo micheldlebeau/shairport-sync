@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 docker run \
-  --detatch \
+  -d \
   --device /dev/snd \
   --env AIRPLAY_NAME=Downstairs \
   --name shairport-sync \
