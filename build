@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
+
 docker build \
   --force-rm \
-  --tag solosuper/shairport-sync:latest \
+  --tag kourkis/shairport-sync:latest \
   .
-

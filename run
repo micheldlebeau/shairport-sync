@@ -3,9 +3,9 @@
 docker run \
   --detatch \
   --device /dev/snd \
-  --env AIRPLAY_NAME=${HOSTNAME} \
+  --env AIRPLAY_NAME=Downstairs \
   --name shairport-sync \
   --net host \
   --restart always \
-  solosuper/shairport-sync:latest -- -d hw:0 -c PCM 
+  kourkis/shairport-sync:latest -- -d hw:0 -c PCM 
 
