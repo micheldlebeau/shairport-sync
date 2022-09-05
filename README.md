@@ -24,6 +24,12 @@ sudo docker run \
 
 ```
 
+## Network considerations
+
+If your raspberry pi is running on a different network as your devices, you will need to ensure that your devices can reach the pi, and that the pi can reach your devices on these ports:
+- 123/udp
+- 6001-6010/udp
+
 
 ## Build the docker image
 ```bash
